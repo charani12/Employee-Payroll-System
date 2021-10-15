@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #222;
+  color: #e6e6e6;
+}
+
+.header {
+  background-color: #47535e;
+  padding: 50px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #ddd;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  color: #ddd;
+  background-color: black;
+}
+div.gallery {
+  margin: 0;
+  border: 1px solid #ccc;
+  float: center;
+  width: 180px;
+  position: relative;
+  left: 30%;
+  top: 50%;
+}
+.footer {
+  background-color: #0a3d62;
+  padding-bottom: 15px;
+  text-decoration: none;
+  text-align: left;
+}
+.footer > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
+}
+button {
+  cursor: pointer;
+  border: 1px solid #555;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px;
+}
+h1 {
+  color: #32a852;
+  margin-top: 30px;
+}
