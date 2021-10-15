@@ -8,28 +8,30 @@
 		}
 		body {
   			margin: 0;
+			background-color: #222;
+			color: #e6e6e6;
 		}
 
 		.header{
-			background-color: #8B0000;
+			background-color: #47535E;
 			padding : 50px;
 			text-align: center;
 		}
 		.topnav {
   			overflow: hidden;
-  			background-color: #333;
+  			background-color: #ddd;
 		}
 		.topnav a {
   			float: left;
   			display: block;
-  			color: #f2f2f2;
+  			color: black;
   			text-align: center;
   			padding: 14px 16px;
   			text-decoration: none;
 		}
 		.topnav a:hover {
-  			background-color: #ddd;
-  			color: black;
+  			color: #ddd;
+  			background-color: black;
 		}
         div.gallery {
             margin: 0;
@@ -42,11 +44,30 @@
             
         }
 		.footer {
-  			background-color: #00BFFF;
+  			background-color: #0A3D62;
   			padding-bottom: 15px;
-            position : relative;
+			text-decoration: none;
   			text-align: left; 
 		}  
+		.footer > ul > li > a {
+  			color: white;
+  			text-decoration: none;
+		}
+		.dark {
+			background-color: #222;
+			color: #e6e6e6;
+		}
+        button {
+			cursor: pointer;
+			border: 1px solid #555;
+			text-align: center;
+			padding: 5px;
+			margin-left: 8px;
+		}
+		h1 {
+			color: #32a852;
+			margin-top: 30px;
+		}
         
 	</style>
 	<body>
@@ -57,7 +78,7 @@
 			<a href="https://vitap.ac.in/about/overview/" target="_blank">About</a>
   			<a href="https://vtop.vitap.ac.in/vtop/" target="_blank">VTOP - Login</a>
   			<a href="register.php">Employee Register</a>
-			  <form method="get" action="index_dm.html">
+			  <form method="get" action="index.html">
 				<button onclick="dm()">Switch Mode</button>
 			</form>
 		</div>
@@ -69,7 +90,7 @@
         </div>
         
 		<div class="footer">
-            <a href="https://www.youtube.com/channel/UC13TAqsAqIkfOUfawdJOffA/featured" target="_blank"><font size=4>YouTube</font></a>
+            <a href="https://www.youtube.com/channel/UC13TAqsAqIkfOUfawdJOffA/featured" target="_blank">YouTube</a>
             <a href="https://www.facebook.com/vitap.university/" target="_blank"><font size=4>Facebook</font></a>
             <a href="https://twitter.com/VITAPuniversity" target="_blank"><font size=4>Twitter</font></a>
 			<a href="https://www.instagram.com/vitap.university/" target="_blank"><font size=4>Instagram</font></a>
@@ -77,5 +98,11 @@
 			<br> <br>
 		</div>
 		
+		<script>
+			function dm(){
+				var element = document.body;
+				element.classList.toggle("dark");
+			}
+		</script>
 	</body>
 </html>
